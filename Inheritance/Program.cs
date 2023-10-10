@@ -29,11 +29,23 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var swallow = new Bird("short", true, "short", "short");
+
+            Console.WriteLine($"A swallow is a bird that has a {swallow.WingSpan} wingspan, does it migrate is {swallow.Migratory}, it has a {swallow.Beak}" +
+                $" beak, and {swallow.Plumage}  plumage.");
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var snake = new Reptile("short", true, 2, "small to large");
+
+            Console.WriteLine($"A snake is a reptile that has a {snake.Protection} for protection, does it lay eggs is {snake.LaysEggs}, it has {snake.Lungs}" +
+                $" lungs, and can be {snake.Size}.");
         }
     }
 }
